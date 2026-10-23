@@ -1,0 +1,13 @@
+.ui-arrow{display:inline-block;width:18px;height:18px;flex:none;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.button,.underlined-link,.header-cta,.service-detail-link{align-items:center}
+.button>span:has(.ui-arrow),.header-cta>span:has(.ui-arrow){display:inline-flex;align-items:center;justify-content:center;flex:none;line-height:1}
+.intro-symbol .ui-arrow{width:70px;height:70px;stroke-width:1}
+.platform-tabs button>b,.service-tabs button>b{display:inline-flex;align-items:center;justify-content:center;flex:none}
+.collection-links a{display:inline-flex;align-items:center;gap:10px}
+@media(max-width:760px){
+ .button{min-height:48px;gap:24px}.button .ui-arrow{width:20px;height:20px;stroke-width:1.7}
+ .header-cta{min-height:44px;display:inline-flex;gap:10px}.header-cta .ui-arrow{width:17px;height:17px}
+ .service-tabs button,.platform-tabs button{min-height:52px}.service-tabs button>b .ui-arrow,.platform-tabs button>b .ui-arrow{width:19px;height:19px}
+ .underlined-link,.service-detail-link,.collection-links a{min-height:44px}.collection-links a{justify-content:space-between;width:100%}
+ .project-watch .ui-arrow{width:20px;height:20px}.menu{min-width:44px;min-height:44px}
+}
