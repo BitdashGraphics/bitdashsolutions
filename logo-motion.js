@@ -14,7 +14,7 @@
   function rotate(p,ax,ay,az){let [x,y,z]=p;let c=Math.cos(ax),s=Math.sin(ax);[y,z]=[y*c-z*s,y*s+z*c];c=Math.cos(ay);s=Math.sin(ay);[x,z]=[x*c+z*s,-x*s+z*c];c=Math.cos(az);s=Math.sin(az);return [x*c-y*s,x*s+y*c,z]}
   let program,rotationLoc,sizeLoc,scaleLoc,vertexCount=0;
   if(gl){
-    const vertex=`attribute vec3 position;attribute vec3 normal;uniform mat3 rotation;uniform vec2 size;uniform float scale;varying vec3 vN;varying vec3 vP;void main(){vec3 p=rotation*position;vP=p;vN=rotation*normal;float w=8.0-p.z;gl_Position=vec4(p.x*scale*16.0/size.x+.06*w,-p.y*scale*16.0/size.y+.02*w,(4.0-p.z)*.08*w,w);}`;
+    const vertex=`attribute vec3 position;attribute vec3 normal;uniform mat3 rotation;uniform vec2 size;uniform float scale;varying vec3 vN;varying vec3 vP;void main(){vec3 p=rotation*position;vP=p;vN=rotation*normal;gl_Position=vec4(p.x*scale*2.0/size.x,-p.y*scale*2.0/size.y,-p.z/8.0,1.0);}`;
     const fragment=`precision mediump float;varying vec3 vN;varying vec3 vP;void main(){vec3 n=normalize(vN);vec3 eye=normalize(vec3(0.,0.,8.)-vP);vec3 r=reflect(-eye,n);float strip=pow(max(0.,1.-abs(r.y+.24)),17.);float strip2=pow(max(0.,1.-abs(r.x-.5)),24.);float diffuse=max(0.,dot(n,normalize(vec3(-.55,-.9,1.))));float spec=pow(max(0.,dot(n,normalize(normalize(vec3(-.5,-.7,1.))+eye))),65.);float rim=pow(1.-max(0.,dot(n,eye)),3.);vec3 base=vec3(.11,.105,.15)+vec3(.20,.18,.27)*diffuse;vec3 color=base+vec3(.52,.49,.61)*strip+vec3(.13,.17,.22)*strip2+vec3(.8,.77,.86)*spec+vec3(.22,.19,.29)*rim;float ao=.8+.2*smoothstep(-2.,2.,vP.z);gl_FragColor=vec4(color*ao,1.);}`;
     const shader=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s};
     program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vertex));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fragment));gl.linkProgram(program);gl.useProgram(program);
@@ -24,7 +24,7 @@
   }
   function draw(){
     if(!width||!height)return;
-    const cx=width*.53,cy=height*.49,scale=Math.min(width*.14,height*.14),ax=.65+mouseY*.36,ay=.3+mouseX*.5,az=-.35+time*.026;
+    const cx=width*.53,cy=height*.49,scale=Math.min(width*.14,height*.14),ax=.65+time*.10,ay=.3+time*.16,az=-.35+time*.08;
     if(gl){gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);const mat=[...rotate([1,0,0],ax,ay,az),...rotate([0,1,0],ax,ay,az),...rotate([0,0,1],ax,ay,az)];gl.uniformMatrix3fv(rotationLoc,false,new Float32Array(mat));gl.uniform2f(sizeLoc,width,height);gl.uniform1f(scaleLoc,scale);gl.drawArrays(gl.TRIANGLES,0,vertexCount);return}ctx.clearRect(0,0,width,height);
     const projected=verts.map(v=>{const p=rotate(v.p,ax,ay,az),n=rotate(v.n,ax,ay,az),perspective=8/(8-p[2]);return {x:cx+p[0]*scale*perspective,y:cy+p[1]*scale*perspective,z:p[2],n}});
     const ordered=faces.map(f=>({f,z:f.reduce((s,i)=>s+projected[i].z,0)/4})).sort((a,b)=>a.z-b.z);
