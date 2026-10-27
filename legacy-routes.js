@@ -1,0 +1,1 @@
+(() => {const routes={projects:'work.html',graphics:'work.html#graphics',platforms:'platforms.html',process:'how-we-work.html',start:'contact.html#start'},hash=location.hash.slice(1);if(routes[hash]){const target=new URL(routes[hash],location.href);target.search=location.search;location.replace(target.href);}})();
