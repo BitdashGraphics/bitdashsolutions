@@ -13,3 +13,7 @@ nav a,.header-cta{font-size:12px}.hero .eyebrow,.eyebrow{font-size:10px}.hero-de
 @media(max-width:760px){.hero h1 br:nth-of-type(1){display:initial}.hero h1{font-size:clamp(54px,13.7vw,95px)}.hero h1 em{display:inline}.hero-stage{top:570px}.menu{min-height:44px;min-width:34px}}
 @media(max-width:390px){.hero h1{font-size:54px}.hero .button{font-size:11px}.hero-watch{font-size:10px}.filters{gap:15px}.filters button{font-size:9px}.project h3{font-size:18px}.project p{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.reveal-ready{opacity:1;transform:none}.hero-stage{transform:none}.magnetic{transform:none!important}header.scrolled{animation:none}.hero-grid{opacity:.3}}
+
+/* Quiet engineering-paper texture: backgrounds only, never above content. */
+.intro,.services-visual .services-warm-intro,.services-visual .ux-cta,.platforms-visual .platform-image-caption{background-image:url("blueprint-paper.svg")!important;background-size:1200px 600px!important;background-position:center!important;background-repeat:repeat!important}
+@media(max-width:700px){.intro,.services-visual .services-warm-intro,.services-visual .ux-cta{background-size:900px 450px!important}}
