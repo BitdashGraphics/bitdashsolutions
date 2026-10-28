@@ -1,0 +1,6 @@
+.platforms-visual .ux-platform-art{padding:0;height:auto;background:#e9e7e1;overflow:hidden}
+.platforms-visual .ux-platform-art img{display:block;width:100%;height:auto;aspect-ratio:3;object-fit:contain;opacity:1;filter:none}
+.platforms-visual .platform-image-caption{display:flex;justify-content:space-between;gap:16px;align-items:center;background:#e9e7e1;border-top:1px solid #29262f1a;color:#29262f;padding:13px 20px}
+.platforms-visual .platform-image-caption strong{font-size:13px;font-weight:550}
+.platforms-visual .platform-image-caption span{font-size:8px;letter-spacing:1px;color:#655d70;white-space:nowrap}
+@media(max-width:700px){.platforms-visual .ux-platform-art{height:auto}.platforms-visual .platform-image-caption{padding:12px 14px;gap:8px}.platforms-visual .platform-image-caption strong{font-size:12px}.platforms-visual .platform-image-caption span{font-size:7px;letter-spacing:.6px}}
