@@ -4,7 +4,18 @@
  if(document.body.classList.contains('ux-inner'))addEventListener('scroll',()=>document.querySelector('header')?.classList.toggle('scrolled',scrollY>100),{passive:true});
  document.querySelectorAll('dialog').forEach(d=>{d.querySelector('.close')?.addEventListener('click',()=>d.close());d.addEventListener('click',event=>{if(event.target===d){const r=d.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)d.close();}});});
  function tabs(selector,key,panelPrefix,vertical=false){const buttons=[...document.querySelectorAll(selector)];if(!buttons.length)return;function select(value,focus=false){buttons.forEach(b=>{const active=b.dataset[key]===value;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;document.getElementById(panelPrefix+b.dataset[key]).hidden=!active;if(active&&focus)b.focus();});}buttons.forEach((b,i)=>{b.onclick=()=>select(b.dataset[key]);b.onkeydown=event=>{const next=vertical?'ArrowDown':'ArrowRight',prev=vertical?'ArrowUp':'ArrowLeft';if([next,prev,'Home','End'].includes(event.key)){event.preventDefault();const n=event.key==='Home'?0:event.key==='End'?buttons.length-1:(i+(event.key===next?1:buttons.length-1))%buttons.length;select(buttons[n].dataset[key],true);}};});return select;}
- const platformSelect=tabs('[data-platform-tab]','platformTab','platform-panel-',true);if(platformSelect){const requested=location.hash.slice(1),mobile=document.querySelector('[data-platform-mobile]');if(document.querySelector('[data-platform-tab="'+CSS.escape(requested)+'"]')){platformSelect(requested);if(mobile)mobile.value=requested;}if(mobile)mobile.onchange=()=>platformSelect(mobile.value);document.querySelectorAll('[data-platform-tab]').forEach(b=>b.addEventListener('click',()=>{if(mobile)mobile.value=b.dataset.platformTab;}));}
+ const platformSelect=tabs('[data-platform-tab]','platformTab','platform-panel-',true);
+ if(platformSelect){
+  const mobile=document.querySelector('[data-platform-mobile]');
+  function choose(value){if(![...document.querySelectorAll('[data-platform-tab]')].some(b=>b.dataset.platformTab===value))return false;platformSelect(value);if(mobile)mobile.value=value;return true;}
+  function openHash(){const value=location.hash.slice(1);if(choose(value)){requestAnimationFrame(()=>document.querySelector('.ux-platform-browser').scrollIntoView({block:'start',behavior:'instant'}));}}
+  function update(value){if(choose(value))history.replaceState(null,'','#'+value);}
+  if(mobile)mobile.onchange=()=>update(mobile.value);
+  document.querySelectorAll('[data-platform-tab]').forEach(b=>b.addEventListener('click',()=>update(b.dataset.platformTab)));
+  addEventListener('hashchange',openHash);
+  if(document.readyState==='complete')openHash();else addEventListener('load',openHash,{once:true});
+ }
+
  tabs('[data-stage]','stage','stage-panel-');const workSelect=tabs('[data-work-tab]','workTab','work-panel-');if(workSelect&&['videos','projects'].includes(location.hash.slice(1)))workSelect('videos');
  const filterButtons=[...document.querySelectorAll('[data-service-filter]')];function filter(value){let count=0;document.querySelectorAll('[data-service-group]').forEach(card=>{card.hidden=value!=='all'&&card.dataset.serviceGroup!==value;if(!card.hidden)count++;});filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.serviceFilter===value)));const status=document.querySelector('.ux-filter-status');if(status)status.textContent=count+' services';}filterButtons.forEach(b=>b.onclick=()=>filter(b.dataset.serviceFilter));
  const switcher=document.querySelector('[data-service-switch]');if(switcher)switcher.onchange=()=>{if(switcher.value)location.href=switcher.value;};

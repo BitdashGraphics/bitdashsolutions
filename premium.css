@@ -15,5 +15,5 @@ nav a,.header-cta{font-size:12px}.hero .eyebrow,.eyebrow{font-size:10px}.hero-de
 @media(prefers-reduced-motion:reduce){.reveal-ready{opacity:1;transform:none}.hero-stage{transform:none}.magnetic{transform:none!important}header.scrolled{animation:none}.hero-grid{opacity:.3}}
 
 /* Quiet engineering-paper texture: backgrounds only, never above content. */
-.intro,.services-visual .services-warm-intro,.services-visual .ux-cta,.platforms-visual .platform-image-caption{background-image:url("blueprint-paper.svg")!important;background-size:1200px 600px!important;background-position:center!important;background-repeat:repeat!important}
+.intro,.services-visual .services-warm-intro,.services-visual .ux-cta,.platforms-visual .platform-image-caption{background-image:url("blueprint-paper.svg?v=20261028-controls2")!important;background-size:1600px 800px!important;background-position:center!important;background-repeat:repeat!important}
 @media(max-width:700px){.intro,.services-visual .services-warm-intro,.services-visual .ux-cta{background-size:900px 450px!important}}
