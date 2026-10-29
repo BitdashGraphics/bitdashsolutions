@@ -3,3 +3,7 @@
 @media(max-width:800px){.detail-visual-split,.detail-work-feature,.detail-handover,.process-expanded .ux-process-body{grid-template-columns:1fr;gap:28px}.detail-application-grid{gap:20px}.detail-application-grid h3{font-size:19px}.detail-heading h2,.detail-handover h2,.detail-work-feature h2{font-size:34px}.detail-warm{padding:40px 0}.detail-applications{padding-top:32px;padding-bottom:30px}.detail-package{padding:25px}.detail-concept-grid{gap:20px}}
 @media(max-width:550px){.detail-application-grid,.detail-concept-grid{grid-template-columns:1fr}.detail-application-grid article{padding-top:15px}.detail-application-grid h3{margin-top:10px}.detail-application-grid p{margin-bottom:0}.detail-heading>p,.detail-work-feature p{font-size:14px}.detail-visual-split article{gap:14px}.detail-visual-split p{font-size:13px}.detail-handover{padding:25px 0 35px}.detail-concept-grid>a>div{padding:21px}.detail-concept-grid h2{font-size:23px}.process-expanded .ux-process-body{padding-top:24px}.process-stage-checks{font-size:13px}.work-expanded .ux-work-tabs button{font-size:11px;padding:10px 14px}.detail-warm{background-size:1000px 500px}}
 @media(prefers-reduced-motion:reduce){.detail-concept-grid>a{transition:none}}
+
+/* Keep intrinsic image dimensions from expanding concept cards. */
+.detail-concept-grid figure{aspect-ratio:3 / 2;overflow:hidden}
+.detail-concept-grid figure img{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;object-position:center;display:block}
