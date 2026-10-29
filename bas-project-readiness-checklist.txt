@@ -1,0 +1,32 @@
+BITDASH SOLUTIONS | BAS PROJECT READINESS
+
+Project / site:
+Primary contact:
+Target milestones:
+
+1. SYSTEM CONTEXT
+[ ] Platform and installed version
+[ ] Controller and supervisor inventory
+[ ] Available licenses, modules and engineering tools
+[ ] Current application / station backups
+
+2. DESIGN INPUTS
+[ ] Mechanical equipment schedules and plans
+[ ] Controls drawings, I/O and point schedules
+[ ] Approved sequences and owner standards
+[ ] Packaged-equipment interface maps
+
+3. DELIVERY SCOPE
+[ ] Required drawings, programming, graphics and test support
+[ ] Review owners and approval milestones
+[ ] Data / operator temperatures standardized in Fahrenheit
+[ ] File formats and handover requirements
+
+4. VERIFICATION
+[ ] Authorized access coordinated through the project team
+[ ] Local team for physical checks and equipment operation
+[ ] Test windows and agreed acceptance criteria
+[ ] Backup, rollback and issue / retest responsibilities
+
+Send the project context to info@bitdashsolutions.com.
+https://bitdashsolutions.com/contact.html
