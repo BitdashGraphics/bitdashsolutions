@@ -54,17 +54,17 @@ window.BAS_SERVICES = [
       "Equipment integration"
     ],
     "platforms": {
-      "niagara": "JACE and Supervisor architecture, station organization, integration boundaries, and point naming designed for the Niagara project.",
-      "alerton": "Controller and network documentation aligned to the installed Alerton BACtalk / Ascent equipment and Compass environment.",
-      "ebi": "Point schedules, controller interfaces, system hierarchy, and supervisory requirements coordinated with the existing EBI architecture.",
-      "webs": "Honeywell WEBs support for controls engineering, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for controls engineering, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for controls engineering, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for controls engineering, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for controls engineering, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for controls engineering, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for controls engineering, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for controls engineering, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Controls engineering for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Controls engineering for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Controls engineering for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Controls engineering for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Controls engineering for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Controls engineering for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Controls engineering for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Controls engineering for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Controls engineering for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Controls engineering for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Controls engineering for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -114,17 +114,17 @@ window.BAS_SERVICES = [
       "Alarm logic"
     ],
     "platforms": {
-      "niagara": "Translate agreed behavior into Niagara station logic and supervisory strategies while identifying which functions belong in field controllers.",
-      "alerton": "Align sequences with Alerton field-controller capability, the installed application, and the Compass operator workflow.",
-      "ebi": "Separate EBI supervisory functions from underlying controller sequences so operating intent and implementation responsibility remain clear.",
-      "webs": "Honeywell WEBs support for sequences of operation, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for sequences of operation, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for sequences of operation, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for sequences of operation, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for sequences of operation, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for sequences of operation, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for sequences of operation, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for sequences of operation, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Sequences of operation for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Sequences of operation for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Sequences of operation for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Sequences of operation for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Sequences of operation for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Sequences of operation for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Sequences of operation for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Sequences of operation for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Sequences of operation for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Sequences of operation for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Sequences of operation for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -182,17 +182,17 @@ window.BAS_SERVICES = [
       "Supervisory integration"
     ],
     "platforms": {
-      "niagara": "JACE and Supervisor station engineering, wiresheet logic, tagging, alarms, histories, schedules, and licensed driver integration.",
-      "alerton": "Alerton controller application support and Compass database coordination, scoped to the installed generation and authorized engineering tools.",
-      "ebi": "EBI point database and supervisory configuration, interface mapping, alarms, histories, and displays; field-controller programming is scoped separately.",
-      "webs": "Honeywell WEBs support for programming & integration, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for programming & integration, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for programming & integration, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for programming & integration, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for programming & integration, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for programming & integration, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for programming & integration, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition tag organization, HMI views, alarm and history configuration, and project-specific integrations. Scope follows the installed release, licensed modules, data sources, and operator requirements."
+      "niagara": "Programming & integration for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Programming & integration for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Programming & integration for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Programming & integration for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Programming & integration for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Programming & integration for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Programming & integration for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Programming & integration for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Programming & integration for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Programming & integration for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Programming & integration for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -246,17 +246,17 @@ window.BAS_SERVICES = [
       "Operational reporting"
     ],
     "platforms": {
-      "niagara": "Niagara histories, equipment tags, and licensed Niagara Analytics provide the basis for agreed rules and performance views.",
-      "alerton": "Use available Alerton trends and meter information for review; any external analytics connection is scoped to the supported data interface.",
-      "ebi": "Work from accessible EBI histories, trend data, and metering. Analytics and reporting integrations depend on available exports, interfaces, and licensing.",
-      "webs": "Honeywell WEBs support for analytics & optimization, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for analytics & optimization, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for analytics & optimization, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for analytics & optimization, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for analytics & optimization, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for analytics & optimization, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for analytics & optimization, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for analytics & optimization, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Analytics & optimization for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Analytics & optimization for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Analytics & optimization for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Analytics & optimization for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Analytics & optimization for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Analytics & optimization for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Analytics & optimization for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Analytics & optimization for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Analytics & optimization for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Analytics & optimization for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Analytics & optimization for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -310,17 +310,17 @@ window.BAS_SERVICES = [
       "Operator handover"
     ],
     "platforms": {
-      "niagara": "Review Niagara station status, alarms, histories, and application behavior during coordinated functional checks.",
-      "alerton": "Support checks across Compass views and the installed Alerton controller applications with on-site personnel.",
-      "ebi": "Review EBI supervisory points, displays, alarms, and histories while coordinating physical and controller-level checks with the field team.",
-      "webs": "Honeywell WEBs support for remote commissioning, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for remote commissioning, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for remote commissioning, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for remote commissioning, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for remote commissioning, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for remote commissioning, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for remote commissioning, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for remote commissioning, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Remote commissioning for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Remote commissioning for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Remote commissioning for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Remote commissioning for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Remote commissioning for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Remote commissioning for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Remote commissioning for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Remote commissioning for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Remote commissioning for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Remote commissioning for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Remote commissioning for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -374,17 +374,17 @@ window.BAS_SERVICES = [
       "Commissioning teams"
     ],
     "platforms": {
-      "niagara": "Coordinate station engineering, JACE and Supervisor dependencies, licenses, driver inputs, IT requirements, and release milestones.",
-      "alerton": "Track controller engineering, Compass configuration, graphics, field readiness, and specialist input across the Alerton delivery scope.",
-      "ebi": "Coordinate EBI supervisory requirements, subsystem interfaces, graphics, access prerequisites, and the project-specific implementation parties.",
-      "webs": "Honeywell WEBs support for project management support, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for project management support, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for project management support, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for project management support, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for project management support, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for project management support, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for project management support, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for project management support, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Project management support for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Project management support for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Project management support for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Project management support for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Project management support for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Project management support for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Project management support for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Project management support for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Project management support for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Project management support for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Project management support for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -438,17 +438,17 @@ window.BAS_SERVICES = [
       "HMI standards"
     ],
     "platforms": {
-      "niagara": "Niagara visualization and PX / web views, scoped to the installed version, available components, and operator requirements.",
-      "alerton": "Compass graphics, equipment pages, and navigation coordinated with the Alerton point database and supported display features.",
-      "ebi": "EBI operator displays, system overviews, point bindings, and navigation aligned to the installed EBI environment.",
-      "webs": "Honeywell WEBs support for graphics & visualization, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for graphics & visualization, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for graphics & visualization, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for graphics & visualization, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for graphics & visualization, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for graphics & visualization, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for graphics & visualization, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for graphics & visualization, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Graphics & visualization for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Graphics & visualization for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Graphics & visualization for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Graphics & visualization for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Graphics & visualization for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Graphics & visualization for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Graphics & visualization for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Graphics & visualization for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Graphics & visualization for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Graphics & visualization for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Graphics & visualization for Ignition. Tags, HMI and histories around an operator workflow."
     }
   },
   {
@@ -502,17 +502,17 @@ window.BAS_SERVICES = [
       "Engineering support"
     ],
     "platforms": {
-      "niagara": "Review station structure, supported version paths, drivers, modules, and JACE / Supervisor dependencies before a proposed change.",
-      "alerton": "Assess the installed Alerton controller and Compass environment, preserving required functionality while defining an upgrade or integration scope.",
-      "ebi": "Review EBI supervisory dependencies, interfaces, displays, and database requirements with the responsible implementation parties before migration.",
-      "webs": "Honeywell WEBs support for lifecycle & modernization, coordinated with the installed system and your project team. Controls documentation and point schedules; Application and supervisory engineering support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "optimizer": "Honeywell Optimizer support for lifecycle & modernization, coordinated with the installed system and your project team. Controller and I/O selection coordination; Approved sequence implementation and application review. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "cpo": "Honeywell CPO support for lifecycle & modernization, coordinated with the installed system and your project team. Plant point schedules and data readiness; Control-sequence and operating-limit coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "trend": "TREND support for lifecycle & modernization, coordinated with the installed system and your project team. Controls submittals and equipment schedules; Controller application and sequence support. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "sbc": "Saia Burgess Controls support for lifecycle & modernization, coordinated with the installed system and your project team. Hardware architecture, I/O, and wiring documentation; Application programming against approved sequences. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "centraline": "CentraLine support for lifecycle & modernization, coordinated with the installed system and your project team. System architecture and controls documentation; Equipment applications and supervisory coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "excel5000": "Honeywell EXCEL 5000 support for lifecycle & modernization, coordinated with the installed system and your project team. Existing-system and application documentation review; Controller logic and sequence coordination. The agreed scope identifies tools, licenses, access, and verification responsibilities.",
-      "ignition": "Ignition support for lifecycle & modernization, coordinated with the installed system and your project team. Tag structure, equipment models, and data mapping; HMI screens and operator navigation. The agreed scope identifies tools, licenses, access, and verification responsibilities."
+      "niagara": "Lifecycle & modernization for Tridium Niagara 4. Station structure, integration and operator services.",
+      "alerton": "Lifecycle & modernization for Alerton. A coordinated path from controller to operator view.",
+      "ebi": "Lifecycle & modernization for Honeywell EBI. BAS information that works at the enterprise level.",
+      "webs": "Lifecycle & modernization for Honeywell WEBs. Niagara-based supervision with a defined engineering boundary.",
+      "optimizer": "Lifecycle & modernization for Honeywell Optimizer. Match the application to the selected controller.",
+      "cpo": "Lifecycle & modernization for Honeywell CPO. Plant data and constraints before performance conclusions.",
+      "trend": "Lifecycle & modernization for TREND. Application detail connected to the installed TREND system.",
+      "sbc": "Lifecycle & modernization for Saia Burgess Controls. Hardware, application and visualization in agreement.",
+      "centraline": "Lifecycle & modernization for CentraLine. Connect the field-control and operator experience.",
+      "excel5000": "Lifecycle & modernization for Honeywell EXCEL 5000. Preserve the existing knowledge. Define the next step.",
+      "ignition": "Lifecycle & modernization for Ignition. Tags, HMI and histories around an operator workflow."
     }
   }
 ];

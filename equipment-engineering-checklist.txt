@@ -1,0 +1,52 @@
+BITDASH SOLUTIONS / EQUIPMENT ENGINEERING REFERENCE
+Illustrative scoping reference. Use approved project requirements for design and testing.
+Project: ______  Equipment: ______  Revision: ______  Reviewer: ______
+
+AIR-HANDLING UNITS
+Context: Start with the airflow path and the approved operating modes. Identify outdoor, return and exhaust dampers; filters; coils; fans; and the sensors used by each loop. Separate a fan command from proof of operation and a damper command from any available feedback.
+Coordination: Coordinate the equipment schematic, I/O schedule and sequence around occupied, unoccupied, warm-up and applicable economizer modes. Record which interlocks are hardwired, which are native equipment functions and which belong to the BAS application.
+Points: Supply, return and outdoor temperatures in °F; fan command and proof; damper position; coil demand; operating mode; relevant alarms.
+Verification: For an approved mode transition, record the precondition, command, observed proof and timing. Ask the local team to verify physical responses. Restore overrides and document exceptions before closing the test.
+Evidence / exceptions / owner: __________________
+
+VAV TERMINAL UNITS
+Context: Confirm whether the terminal is cooling-only, reheat or fan-powered. Obtain design airflow values, sensor details and the approved occupancy and temperature-control sequence. A common graphic template should not conceal differences between terminal types.
+Coordination: Coordinate airflow measurement, minimum and maximum limits, damper control and reheat permissions. Distinguish the balancing contractor’s field measurements from the values available in the controller. Agree which parameters operators may adjust.
+Points: Zone temperature and setpoints in °F; airflow and airflow setpoint; damper command; reheat output; occupancy; available fan status.
+Verification: Review a representative zone through an approved demand change. Compare measured airflow with the local balancing record, verify the applicable limit and check reheat behavior against the sequence.
+Evidence / exceptions / owner: __________________
+
+PACKAGED ROOFTOP UNITS
+Context: Obtain the manufacturer’s interface map and unit sequence before defining integration. Packaged equipment may retain staging, safeties and operating limits in its own controller. A network interface exposes only the documented points and permitted commands.
+Coordination: Map the requested supervisory functions: enable, occupancy, setpoint adjustment, mode, status and faults. Record scaling, enumerated states, command ownership and the expected behavior when communication is lost.
+Points: Unit enable and mode; supply and space temperatures in °F; stage status if exposed; alarm code; fan proof; communication quality.
+Verification: Compare representative values with the unit’s local display. Test only approved writes, confirm the resulting mode and record recovery after the agreed communication-loss check.
+Evidence / exceptions / owner: __________________
+
+FAN-COIL UNITS
+Context: Identify two-pipe or four-pipe configuration, fan speeds or variable-speed control, valve arrangement and any condensate interlock. The controls package should reflect the actual installed terminal equipment.
+Coordination: Coordinate zone demand, fan operation and valve control with the design sequence. For seasonal changeover systems, identify the approved changeover source and prevent assumptions about heating or cooling availability.
+Points: Zone temperature and setpoint in °F; fan command/status where available; heating and cooling valve commands; changeover mode; condensate alarm.
+Verification: Observe an approved heating or cooling demand with the local team. Confirm the correct valve and fan response, applicable interlocks and restoration to automatic operation.
+Evidence / exceptions / owner: __________________
+
+BOILER PLANTS
+Context: Document boiler, pump and distribution relationships before defining supervisory staging. Obtain the manufacturer’s operating limits and identify the packaged controls and safety functions that remain authoritative.
+Coordination: Coordinate enable requests, available status, lead/lag intent, reset requests and the project’s proof requirements. Distinguish a BAS request from the equipment controller’s decision to operate.
+Points: Supply and return temperatures in °F; plant demand; boiler availability and status; pump command and proof; approved setpoint; fault indication.
+Verification: Use the approved procedure to observe demand, enable and proof in sequence. Record staging decisions and recovery behavior without treating a supervisory test as validation of combustion or equipment safeties.
+Evidence / exceptions / owner: __________________
+
+CHILLED-WATER PLANTS
+Context: Map chillers, pumps, towers and bypasses along with the available flow, pressure, power and temperature measurements. Identify the local control and optimization boundaries before assigning changes to either layer.
+Coordination: Connect staging and reset intent to verified measurements and equipment constraints. Track sensor quality and timestamps before drawing conclusions from plant dashboards. Do not calculate a performance finding from unverified inputs.
+Points: Chilled-water supply/return temperatures in °F; flow; differential pressure; equipment status; power; approved setpoints and plant mode.
+Verification: Review one operating transition with the local team and correlate commands, proofs and plant measurements. For performance review, compare equivalent operating conditions and document measurement limitations.
+Evidence / exceptions / owner: __________________
+
+METERS AND ENERGY DATA
+Context: Confirm the meter identity, measured quantity, engineering units and data source. Distinguish instantaneous demand from accumulated consumption. Record whether a value comes from a physical register, a pulse count or a calculation.
+Coordination: Document register mapping, scaling, timestamps and aggregation intervals. Plan how resets, rollovers, missing samples and replacement meters will be identified in the record. Keep billing and engineering-use requirements explicit.
+Points: Meter identifier; demand; accumulated consumption; unit multiplier; timestamp; quality; reset or replacement event where available.
+Verification: Compare the supervisory reading with the source meter and a known interval. Check the change in the cumulative value, flag gaps and retain the mapping revision with the validation record.
+Evidence / exceptions / owner: __________________
